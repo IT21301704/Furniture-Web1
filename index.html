@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Teak — Handcrafted Teak Furniture in Sri Lanka</title>
+  <meta name="description" content="The Teak crafts solid teak and mahogany furniture in Sri Lanka — sofas, dining sets, beds, wardrobes and made-to-measure pieces, delivered island-wide." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <p class="topbar__hours">Mon – Sat 9 AM – 6 PM &nbsp;·&nbsp; Sun 9 AM – 1 PM</p>
+        <div class="topbar__contact">
+          <a href="tel:+94770000000" class="js-phone">+94 77 000 0000</a>
+          <a href="mailto:hello@theteak.lk" class="topbar__email">hello@theteak.lk</a>
+          <span class="topbar__social">
+            <a href="#" aria-label="Facebook">Fb</a>
+            <a href="#" aria-label="Instagram">Ig</a>
+            <a href="#" aria-label="TikTok">Tt</a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container nav">
+      <a href="#home" class="logo" aria-label="The Teak home">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 9 6 15 6 20a10 10 0 0 0 20 0c0-5-3-11-10-17z"/><path d="M16 9v20M16 16l-4-3M16 21l5-4"/></svg>
+        <span class="logo__text"><small>The</small>Teak</span>
+      </a>
+
+      <nav class="nav__menu" id="navMenu">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active">Home</a></li>
+          <li><a href="#shop" class="nav__link">Shop</a></li>
+          <li><a href="#categories" class="nav__link">Collections</a></li>
+          <li><a href="#custom" class="nav__link">Made to Measure</a></li>
+          <li><a href="#about" class="nav__link">About Us</a></li>
+          <li><a href="#visit" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="wishBtn" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3.1 4.5 6.8 4.5c2.1 0 3.5 1.1 4.2 2.3h2c.7-1.2 2.1-2.3 4.2-2.3 3.7 0 5.9 3.7 4.4 7.2C19.5 16.4 12 21 12 21z"/></svg>
+          <span class="badge" id="wishCount">0</span>
+        </button>
+        <button class="icon-btn" id="cartBtn" aria-label="Cart">
+          <svg viewBox="0 0 24 24"><path d="M6 7h12l-1.2 12.1a2 2 0 0 1-2 1.9H9.2a2 2 0 0 1-2-1.9L6 7z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></svg>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+        <button class="icon-btn nav__toggle" id="navToggle" aria-label="Open menu">
+          <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO (slider) ============ -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow reveal" id="heroEyebrow">Crafted in Sri Lanka</span>
+          <h1 class="hero__title reveal" id="heroTitle">Solid teak, shaped for the way <em>you live</em>.</h1>
+          <p class="hero__text reveal" id="heroText">Kiln-dried teak and mahogany, joined by hand and finished to last for generations — from a single chair to a complete home.</p>
+          <div class="hero__cta reveal">
+            <a href="#shop" class="btn btn--primary">Shop the Collection</a>
+            <a href="#custom" class="btn btn--ghost"><span class="play">✎</span> Design Your Own</a>
+          </div>
+          <div class="hero__stats reveal">
+            <div><strong data-count="15">0</strong><span>+ Years of craft</span></div>
+            <div><strong data-count="5">0</strong><span>k+ Homes furnished</span></div>
+            <div><strong data-count="100">0</strong><span>% Solid timber</span></div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__img-main" id="heroImages">
+            <img class="active" src="https://images.unsplash.com/photo-1618220179428-22790b461013?w=1000&q=80&auto=format&fit=crop" alt="Warm living room with a teak sideboard and armchair" />
+            <img src="https://images.unsplash.com/photo-1604578762246-41134e37f9cc?w=1000&q=80&auto=format&fit=crop" alt="Open tropical dining room with a solid wood table" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&q=80&auto=format&fit=crop" alt="Bright living room with a tan leather sofa" loading="lazy" />
+          </div>
+          <div class="hero__dots" id="heroDots"></div>
+          <div class="hero__card floating">
+            <img src="https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?w=200&q=80&auto=format&fit=crop" alt="" />
+            <div>
+              <small>Bestseller</small>
+              <p>Six-Seater Teak Dining Set</p>
+              <span class="price">Rs. 465,000</span>
+            </div>
+          </div>
+          <div class="hero__rating floating floating--delay">
+            <span class="stars">★★★★★</span>
+            <p><strong>5-Year</strong> warranty on every frame</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container cities reveal">
+        <span>Delivering island-wide</span>
+        <ul>
+          <li>Colombo</li><li>Kandy</li><li>Galle</li><li>Negombo</li><li>Kurunegala</li><li>Jaffna</li><li>Matara</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="features">
+      <div class="container features__grid">
+        <div class="feature reveal">
+          <div class="feature__icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
+          <h3>Made to Measure</h3>
+          <p>Any piece built to your size, design and finish.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="2"/></svg></div>
+          <h3>Kiln-Dried Teak</h3>
+          <p>Seasoned timber that resists warping in our humid climate.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature__icon"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></div>
+          <h3>Island-wide Delivery</h3>
+          <p>Delivered and assembled in your home, anywhere in Sri Lanka.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature__icon"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div>
+          <h3>5-Year Warranty</h3>
+          <p>We stand behind every joint, frame and finish.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SHOP ============ -->
+    <section class="section section--soft" id="shop">
+      <div class="container">
+        <div class="section__head section__head--row reveal">
+          <div>
+            <span class="eyebrow">Signature Pieces</span>
+            <h2 class="section__title">Our bestselling furniture</h2>
+          </div>
+          <div class="filters" id="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="living">Living</button>
+            <button class="filter" data-filter="dining">Dining</button>
+            <button class="filter" data-filter="bedroom">Bedroom</button>
+            <button class="filter" data-filter="storage">Storage</button>
+          </div>
+        </div>
+
+        <div class="products" id="products"><!-- rendered by JS --></div>
+      </div>
+    </section>
+
+    <!-- ============ COLLECTIONS ============ -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Our Collections</span>
+          <h2 class="section__title">Furniture for every room in your home</h2>
+        </div>
+
+        <div class="categories">
+          <a href="#shop" data-filter="living" class="category category--tall reveal">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&q=80&auto=format&fit=crop" alt="Living room" />
+            <div class="category__info"><h3>Living Room</h3><span>Explore →</span></div>
+          </a>
+          <a href="#shop" data-filter="dining" class="category reveal">
+            <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?w=900&q=80&auto=format&fit=crop" alt="Dining room" />
+            <div class="category__info"><h3>Dining Room</h3><span>Explore →</span></div>
+          </a>
+          <a href="#shop" data-filter="bedroom" class="category reveal">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=900&q=80&auto=format&fit=crop" alt="Bedroom" />
+            <div class="category__info"><h3>Bedroom</h3><span>Explore →</span></div>
+          </a>
+          <a href="#shop" data-filter="storage" class="category category--wide reveal">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1200&q=80&auto=format&fit=crop" alt="Study and storage furniture" />
+            <div class="category__info"><h3>Storage &amp; Study</h3><span>Explore →</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section section--soft" id="process">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Our Craft</span>
+          <h2 class="section__title">What goes into every piece</h2>
+        </div>
+        <div class="process">
+          <div class="step reveal">
+            <span class="step__num">01</span>
+            <h3>Select the timber</h3>
+            <p>We choose mature, responsibly sourced teak and mahogany, then kiln-dry it to the right moisture level.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">02</span>
+            <h3>Design &amp; measure</h3>
+            <p>Pick from our range or bring your own sketch, photo or architect's drawing. We plan it around your space.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">03</span>
+            <h3>Hand-crafted joinery</h3>
+            <p>Our craftsmen use mortise-and-tenon and dovetail joints — strong, traditional and built to last.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">04</span>
+            <h3>Finish &amp; deliver</h3>
+            <p>Sanded and hand-polished in your chosen finish, then delivered and set up in your home.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROMO BANNER ============ -->
+    <section class="promo">
+      <div class="container promo__inner reveal">
+        <div class="promo__text">
+          <span class="eyebrow eyebrow--light">Year-End Sale</span>
+          <h2>Up to <em>20% off</em> selected living &amp; dining pieces</h2>
+          <p>Refresh your home for the festive season with solid teak sofas, dining sets and more.</p>
+          <div class="countdown" id="countdown">
+            <div><strong id="cdDays">00</strong><span>Days</span></div>
+            <div><strong id="cdHours">00</strong><span>Hours</span></div>
+            <div><strong id="cdMins">00</strong><span>Mins</span></div>
+            <div><strong id="cdSecs">00</strong><span>Secs</span></div>
+          </div>
+          <a href="#shop" class="btn btn--light" data-filter-link="living">Shop the Sale</a>
+        </div>
+        <div class="promo__img">
+          <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=1000&q=80&auto=format&fit=crop" alt="Tan leather sofa" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CUSTOM / MADE TO MEASURE ============ -->
+    <section class="custom" id="custom">
+      <div class="container custom__inner reveal">
+        <div class="custom__img">
+          <img src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=800&q=80&auto=format&fit=crop" alt="Custom-made teak wardrobe" />
+        </div>
+        <div class="custom__text">
+          <span class="eyebrow eyebrow--light">Made to Measure</span>
+          <h2>Have a design in mind? <em>We'll build it.</em></h2>
+          <p>From a single sofa to a complete home or office fit-out — share your idea, a photo or a drawing, and our team will help with design, timber, finish and a quotation.</p>
+          <ul class="custom__list">
+            <li>Free design consultation</li>
+            <li>Choice of teak, mahogany or jak</li>
+            <li>Custom sizes &amp; fabric options</li>
+          </ul>
+          <div class="custom__cta">
+            <a href="#" class="btn btn--whatsapp js-wa" data-wa-msg="Hi The Teak, I'd like to discuss a custom furniture project.">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+              Chat on WhatsApp
+            </a>
+            <a href="tel:+94770000000" class="btn btn--outline-light js-phone-btn">Call Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__images reveal">
+          <img class="about__img1" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=80&auto=format&fit=crop" alt="Bright living room styled with The Teak furniture" />
+          <img class="about__img2" src="https://images.unsplash.com/photo-1503602642458-232111445657?w=600&q=80&auto=format&fit=crop" alt="Hand-planed teak stool" />
+          <div class="about__badge"><strong>15</strong><span>years of<br/>craftsmanship</span></div>
+        </div>
+        <div class="about__content reveal">
+          <span class="eyebrow">About The Teak</span>
+          <h2 class="section__title">Sri Lankan craftsmanship, made for modern homes.</h2>
+          <p>The Teak began in a small family workshop with a simple belief: real wood, honestly made, only gets better with time. Today our craftsmen still cut, join and finish every piece by hand — pairing the timeless strength of Sri Lankan teak with clean, modern design.</p>
+          <ul class="checklist">
+            <li>Solid hardwood frames — never particleboard</li>
+            <li>Traditional mortise-and-tenon joinery</li>
+            <li>Finishes chosen for tropical humidity</li>
+            <li>Ready stock or made to order in 3–5 weeks</li>
+          </ul>
+          <a href="#visit" class="btn btn--primary">Visit Our Showroom</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Happy Customers</span>
+          <h2 class="section__title">Loved in homes across Sri Lanka</h2>
+        </div>
+
+        <div class="slider reveal">
+          <div class="slider__track" id="sliderTrack">
+            <figure class="testimonial">
+              <span class="stars">★★★★★</span>
+              <blockquote>“Our teak dining set is the heart of our home now. The finish is beautiful and the team delivered and set everything up the same day.”</blockquote>
+              <figcaption><span class="avatar">NP</span><div><strong>Nadeesha P.</strong><small>Colombo 07</small></div></figcaption>
+            </figure>
+            <figure class="testimonial">
+              <span class="stars">★★★★★</span>
+              <blockquote>“They built a wardrobe exactly to the size of our alcove from a photo I sent on WhatsApp. Solid, perfectly finished, and on time.”</blockquote>
+              <figcaption><span class="avatar">RJ</span><div><strong>Ruwan J.</strong><small>Kandy</small></div></figcaption>
+            </figure>
+            <figure class="testimonial">
+              <span class="stars">★★★★★</span>
+              <blockquote>“You can feel the quality of real teak. We furnished our whole villa with The Teak and our guests always ask where it's from.”</blockquote>
+              <figcaption><span class="avatar">FR</span><div><strong>Fathima R.</strong><small>Galle</small></div></figcaption>
+            </figure>
+          </div>
+          <div class="slider__controls">
+            <button class="icon-btn icon-btn--round" id="prevSlide" aria-label="Previous">←</button>
+            <div class="slider__dots" id="sliderDots"></div>
+            <button class="icon-btn icon-btn--round" id="nextSlide" aria-label="Next">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">#TheTeakAtHome</span>
+          <h2 class="section__title">Get inspired by real homes</h2>
+        </div>
+        <div class="gallery">
+          <img class="reveal" src="https://images.unsplash.com/photo-1604578762246-41134e37f9cc?w=700&q=80&auto=format&fit=crop" alt="Open dining room with a wooden table" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=700&q=80&auto=format&fit=crop" alt="Living room interior" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=700&q=80&auto=format&fit=crop" alt="Cosy bedroom" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=700&q=80&auto=format&fit=crop" alt="Sofa with cushions" />
+          <img class="reveal" src="https://images.unsplash.com/photo-1616627547584-bf28cee262db?w=700&q=80&auto=format&fit=crop" alt="Tufted mustard armchair" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT US ============ -->
+    <section class="section section--soft" id="visit">
+      <div class="container visit">
+        <div class="visit__info reveal">
+          <span class="eyebrow">Visit Us</span>
+          <h2 class="section__title">See, touch and sit on it — visit our showroom.</h2>
+          <div class="visit__grid">
+            <div>
+              <h4>Showroom</h4>
+              <p>No. 00, Galle Road,<br/>Colombo, Sri Lanka</p>
+            </div>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>Mon – Sat: 9 AM – 6 PM<br/>Sunday: 9 AM – 1 PM</p>
+            </div>
+            <div>
+              <h4>Contact</h4>
+              <p><a href="tel:+94770000000" class="js-phone">+94 77 000 0000</a><br/><a href="mailto:hello@theteak.lk">hello@theteak.lk</a></p>
+            </div>
+            <div>
+              <h4>We Accept</h4>
+              <p>Cash · Bank transfer<br/>Visa · Mastercard</p>
+            </div>
+          </div>
+          <div class="visit__cta">
+            <a href="https://maps.google.com/?q=Colombo+Sri+Lanka" target="_blank" rel="noopener" class="btn btn--primary">Get Directions</a>
+            <a href="#" class="btn btn--outline js-wa" data-wa-msg="Hi The Teak, I'd like to visit your showroom.">WhatsApp Us</a>
+          </div>
+        </div>
+        <div class="visit__img reveal">
+          <img src="https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?w=900&q=80&auto=format&fit=crop" alt="Teak dining table on display" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER ============ -->
+    <section class="newsletter" id="contact">
+      <div class="container newsletter__inner reveal">
+        <div>
+          <h2>Join The Teak family</h2>
+          <p>Be the first to see new designs, festive offers and care tips for your wood furniture.</p>
+        </div>
+        <form class="newsletter__form" id="newsletterForm" novalidate>
+          <input type="email" id="newsletterEmail" placeholder="Your email address" required />
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+          <small class="form-msg" id="formMsg"></small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="logo logo--light">
+          <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 9 6 15 6 20a10 10 0 0 0 20 0c0-5-3-11-10-17z"/><path d="M16 9v20M16 16l-4-3M16 21l5-4"/></svg>
+          <span class="logo__text"><small>The</small>Teak</span>
+        </a>
+        <p>Handcrafted teak &amp; mahogany furniture, made in Sri Lanka and delivered island-wide.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook">Fb</a>
+          <a href="#" aria-label="Instagram">Ig</a>
+          <a href="#" aria-label="TikTok">Tt</a>
+          <a href="#" class="js-wa" aria-label="WhatsApp">Wa</a>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#shop" data-filter-link="living">Living Room</a></li>
+          <li><a href="#shop" data-filter-link="dining">Dining Room</a></li>
+          <li><a href="#shop" data-filter-link="bedroom">Bedroom</a></li>
+          <li><a href="#shop" data-filter-link="storage">Storage &amp; Study</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul><li><a href="#custom">Made to Measure</a></li><li><a href="#">Delivery Information</a></li><li><a href="#">Warranty &amp; Care</a></li><li><a href="#">FAQ</a></li></ul>
+      </div>
+      <div>
+        <h4>Visit Us</h4>
+        <ul class="footer__contact">
+          <li>No. 00, Galle Road, Colombo</li>
+          <li>Mon – Sat · 9 AM – 6 PM</li>
+          <li><a href="tel:+94770000000" class="js-phone">+94 77 000 0000</a></li>
+          <li><a href="mailto:hello@theteak.lk">hello@theteak.lk</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> The Teak. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> · <a href="#">Terms &amp; Conditions</a></p>
+    </div>
+  </footer>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer__head">
+      <h3>Your Cart</h3>
+      <button class="icon-btn" id="closeCart" aria-label="Close cart">✕</button>
+    </div>
+    <div class="drawer__body" id="cartItems"></div>
+    <div class="drawer__foot">
+      <div class="drawer__total"><span>Subtotal</span><strong id="cartTotal">Rs. 0</strong></div>
+      <p class="drawer__note">Delivery charges confirmed with your order. Cash, bank transfer &amp; cards accepted.</p>
+      <button class="btn btn--whatsapp btn--block" id="checkoutBtn">Place Order on WhatsApp</button>
+    </div>
+  </aside>
+
+  <!-- ============ QUICK VIEW MODAL ============ -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__box">
+      <button class="icon-btn modal__close" id="closeModal" aria-label="Close">✕</button>
+      <div class="modal__img"><img id="modalImg" src="" alt="" /></div>
+      <div class="modal__info">
+        <span class="eyebrow" id="modalCat"></span>
+        <h3 id="modalTitle"></h3>
+        <div class="modal__price" id="modalPrice"></div>
+        <p id="modalDesc"></p>
+        <p class="modal__meta" id="modalMeta"></p>
+        <div class="swatches" id="modalSwatches"></div>
+        <div class="qty">
+          <button id="qtyMinus" aria-label="Decrease">−</button>
+          <span id="qtyVal">1</span>
+          <button id="qtyPlus" aria-label="Increase">+</button>
+        </div>
+        <button class="btn btn--primary btn--block" id="modalAdd">Add to Cart</button>
+        <button class="btn btn--outline btn--block modal__wa" id="modalWa">Ask about this on WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Floating WhatsApp -->
+  <a href="#" class="wa-float js-wa" aria-label="Chat with us on WhatsApp" data-wa-msg="Hi The Teak, I have a question about your furniture.">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+  </a>
+
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
